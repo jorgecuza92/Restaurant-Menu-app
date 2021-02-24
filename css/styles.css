@@ -1,0 +1,22 @@
+.menuHeading {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-evenly
+}
+
+#itemsContent .menuText {
+  display: flex;
+  justify-content: center;
+}
+
+.dessertPicture {
+  height: 165px;
+  width: auto;
+  display:flex;
+  justify-content: ;
+  
+}

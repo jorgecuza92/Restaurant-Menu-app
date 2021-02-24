@@ -17,7 +17,7 @@ let desserts = dishes.filter(function(item) {
 })
 
 btnStarters.addEventListener('click', function() {
-  btnStarters.value = ""
+  itemsContent.innerHTML = ""
   starters.map(function(item) {
     let starterMap = `
     <h4>${item.title}</h4>
@@ -30,6 +30,7 @@ btnStarters.addEventListener('click', function() {
 })
 
 btnEntrees.addEventListener('click', function() {
+  itemsContent.innerHTML = ""
   entrees.map(function(item) {
     let entreeMap = `
     <h4>${item.title}</h4>
@@ -42,12 +43,16 @@ btnEntrees.addEventListener('click', function() {
 })
 
 btnDesserts.addEventListener('click', function() {
+  itemsContent.innerHTML = ""
   desserts.map(function(item) {
     let dessertMap = `
+    <div class="menuText">
     <h4>${item.title}</h4>
     <p>${item.description}</p>
     <h4>${item.price}</h4>
-    <img src="${item.imageURL}" alt="">
+    </div>
+    <img src="${item.imageURL}" class="dessertPicture" alt="dessertPictures">
+    
     `
     itemsContent.innerHTML += dessertMap
   })
